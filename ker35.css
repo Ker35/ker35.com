@@ -1,7 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
 
 body {
     background-color: #1e1e1e;
     color: #cccccc;
     font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+    height: 100vh;
+    background-color: #252526;
+}
+
+.nav-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #cccccc;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-item .card {
+    background-color: #333333;
+    border-radius: 25px;
+}
+
+.rgb {
+	--angle: 0deg;
+	border-right: 2px solid;
+	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+	
+	animation: 1.5s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.p25 {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+}
+
+.p50 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.p75 {
+    padding-top: 37.5px;
+    padding-bottom: 37.5px;
+}
+
+.p100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
